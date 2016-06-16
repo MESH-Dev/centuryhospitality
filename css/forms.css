@@ -1,0 +1,223 @@
+/**VISUAL FORM BUILDER**/
+.visual-form-builder  {
+	width: 440px;
+	background: transparent;
+	margin: 0px;
+	padding:20px;
+	position: relative;
+  border: 0px solid #f00;
+    font-family: arial;
+
+}
+
+.visual-form-builder  li {
+	list-style-type: none;
+  position: relative;
+}
+
+.visual-form-builder  span {
+
+}
+
+.visual-form-builder  .section-div {
+  background: #ccc;
+  margin-bottom: 20px;
+  padding: 20px;
+  border-radius: 2px;
+}
+/***HIDE ME***/
+.visual-form-builder  .section-div.vfb-section-98 h4,
+.visual-form-builder  .section-div.vfb-section-99 h4,
+.visual-form-builder  .section-div.vfb-high-school-32 h4,
+.visual-form-builder  .section-div.vfb-college-35 h4,
+.visual-form-builder  .section-div.vfb-other-39 h4,
+.visual-form-builder  .section-div.vfb-certifications-44 h4,
+.visual-form-builder  .section-div.vfb-foreign-languages-47 h4,
+.visual-form-builder  .section-div.vfb-section-104 h4,
+.visual-form-builder  .section-div.vfb-section-102 h4,
+.visual-form-builder  .section-div.vfb-section-100 h4,
+.visual-form-builder  .section-div.vfb-section-101 h4
+
+ {
+  display: none;
+}
+
+label[for='vfb-high-school-graduation-34'],
+label[for='vfb-age21-28'],
+label[for='vfb-overtime-24'],
+label[for='vfb-weekends-25'],
+label[for='vfb-citizen-18'],
+label[for='vfb-bond-67'],
+label[for='vfb-bond-explanation-68'],
+label[for='vfb-crime-69'],
+label[for='vfb-crime-explanation-70'],
+label[for='vfb-additional-information-71'],
+label[for='vfb-veteran-73'],
+label[for='vfb-agreement-97']
+{
+  display: none;
+}
+
+/***DONE HIDING***/
+
+.visual-form-builder  .section-div h4 {
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+
+.visual-form-builder  ul {
+	margin: 0px;
+	padding: 0px;
+}
+
+
+/**FIELDSETS**/
+.visual-form-builder  fieldset.vfb-fieldset {
+  background: transparent;
+  border: 0px;
+}
+
+
+
+
+
+/**COMMON**/
+.visual-form-builder  .legend h3 {
+  font-size:  18px;
+  color: #555;
+  text-transform: uppercase;
+  display: block;
+  padding: 6px 0px;
+  border-top: 1px solid #555;
+  border-bottom: 1px solid #555;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.visual-form-builder  label {
+  	font-size: 15px;
+    color: #555;
+    	text-transform: uppercase;
+}
+
+.visual-form-builder  input.vfb-medium { 
+	width: 270px;
+	font-size: 18px;
+	padding: 5px 10px;
+  	margin-bottom: 5px;
+  border-radius: 0px;
+  border: 0px solid #999;
+}
+
+.visual-form-builder  input.vfb-small { 
+	width: 170px;
+	font-size: 18px;
+	padding: 5px 10px;
+  margin-bottom: 5px;
+  border-radius: 0px;
+  border: 0px solid #999;
+}
+
+.visual-form-builder  select.vfb-select {
+	font-size: 18px;
+	padding: 5px 10px;
+  margin-bottom: 5px;
+  border-radius: 0px;
+  border: 0px solid #999;
+}
+
+.visual-form-builder  textarea {
+	width: 320px;
+	height: 90px;
+	border: 1px solid #ccc;
+	clear: both;
+	font-size: 18px;
+	padding: 5px 10px;
+
+}
+
+.visual-form-builder input[type='radio'],
+.visual-form-builder input[type='checkbox'] {
+  width: 20px;
+  height: 20px;
+  line-height: 90%;
+	font-size: 18px;
+	padding:  2px;
+  display: inline-block;
+  margin-top: 8px;
+  float: left;
+  position: relative;
+  z-index: 2;
+}
+.visual-form-builder input[type='radio'] + label {
+  float: left;
+   display: inline-block;
+  font-size: 12px;
+  height: 40px;
+    margin-top: 8px;
+    position: relative;
+  z-index: 2;
+}
+
+input:focus,
+textarea:focus,
+select:focus {
+    outline-width: 0;
+}
+
+
+/**SUBMIT**/
+input[type='submit'] {
+	width: 80px !important;
+	background: #333;
+	color: #fff;
+	padding: 5px 0px;
+	margin-top: 5px;
+	margin-right: 10px;
+	float: right;
+  border: 0px !important;
+  border-radius: 0px !important;
+  font-size: 13px;
+}
+
+input[type='submit']:hover {
+  background:#999;
+  color: #fff;
+  cursor: pointer;
+}
+
+/**ERRORS**/
+
+.vfb-error {
+  color: #F00;
+  font: 12px arial;
+}
+
+/***PAGER STUFF***/
+.fieldset.vfb-page{display:none;}
+.item-page-break{position:relative;}
+.vfb-page-counter{
+  float:right;
+  font-weight:bold;
+}
+.vfb-page-next{
+  border-radius:3px;
+  background-color:#5B8498;
+  padding:4px 8px;
+  color:white;
+}
+.vfb-page-next:hover{
+  background-color:#3D5865;
+  text-decoration:none;
+}
+.vfb-clear{
+  clear:both;
+  display:block;
+  height:0;
+  width:0;
+  overflow:hidden;
+  visibility:hidden;
+}
+
