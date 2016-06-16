@@ -1767,7 +1767,7 @@ a.more {
   .footer ul.footer-locations li {
     display: inline-block;
     float: left;
-    padding-right: 10px;
+    padding-right: 20px;
     width: auto; }
   /* line 585, ../sass/_layout.scss */
   .footer h3 {
