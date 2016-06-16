@@ -1311,7 +1311,8 @@ ul#nav {
 .top-bar {
   text-align: right;
   position: absolute;
-  right: 10px; }
+  right: 10px;
+  z-index: 500; }
 
 /* line 187, ../sass/_layout.scss */
 .top-links {
