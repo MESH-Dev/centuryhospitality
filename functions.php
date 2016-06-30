@@ -400,7 +400,7 @@ function register_city_tax() {
                 'not_found_in_trash'    => __( 'No City found in Trash' ),
             );
             
-            $pages = array('hotels_test');
+            $pages = array('hotels');
             
             $args = array(
                 'labels'            => $labels,
@@ -430,7 +430,7 @@ function register_hotel_family_tax() {
                 'not_found_in_trash'    => __( 'No Hotel Family found in Trash' ),
             );
             
-            $pages = array('hotels_test');
+            $pages = array('hotels');
             
             $args = array(
                 'labels'            => $labels,

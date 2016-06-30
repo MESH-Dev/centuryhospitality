@@ -26,7 +26,7 @@
 				<?php 
 
                   $args2 = array(
-                          'post_type' => 'hotels_test',
+                          'post_type' => 'hotels',
                           'order_by' => 'name',
                           'order' => 'ASC',
                           'posts_per_page' => -1,
