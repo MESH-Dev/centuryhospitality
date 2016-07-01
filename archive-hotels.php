@@ -26,11 +26,12 @@
 				<?php 
 
                   $args2 = array(
+                  			'post_status' => 'publish',
                           'post_type' => 'hotels',
                           'order_by' => 'name',
                           'order' => 'ASC',
                           'posts_per_page' => -1,
-                          'post_status' => 'publish',
+                          
 
                           'tax_query' => array(
 										array(
@@ -74,11 +75,14 @@
                   $the_whole = strtolower(implode("-", $the_parts));
                   $the_id = str_replace(array('--','/'),'-', $the_whole);
 
+                  $publish = get_post_status($ID);
+
+                  if ($publish == 'publish') {
                   ?>
 
                   <div><a href="#<?php echo $the_id; ?>"><?php the_title(); ?></a></div>
 
-                  <? endwhile; endif; wp_reset_query(); ?>
+                  <? } endwhile; endif; wp_reset_query(); ?>
 
               	</div>
               </li>
