@@ -1,7 +1,7 @@
 
 <div id="footer">
 	<div class="container footer">
-		<div class="two columns ">
+		<!-- <div class="two columns ">
 			<?php wp_nav_menu( array('menu_id' => 'footer-menu', 'theme_location' => 'footer-menu') ); ?>
 
 			<div class="clear" style="margin-top: 20px;"></div>
@@ -10,9 +10,9 @@
 					<img src="<?php bloginfo( 'template_url' ); ?>/images/linked_in.png">
 				</a>
 			</p>
-		</div>
+		</div> -->
 
-		<div class="nine columns footer_contact">
+		<div class="ten columns footer_contact">
 			<div class="border-left">
 				
 				<h3>Contact Us Today</h3>
@@ -42,8 +42,14 @@
 			</div>
 		</div>
 
-		<div class="one columns footer_icon">
+		<div class="two columns footer_icon">
 			<a href="<?php bloginfo('url' ); ?>" title="Century Hospitality"><img src="<?php bloginfo('template_url' ); ?>/images/footer-CH.png"></a>
+			<p>
+				<a href="http://www.linkedin.com/company/century-hospitality" target-"_blank" >
+					<i class="fa fa-fw fa-2x fa-linkedin-square"></i>
+					<!-- <img src="<?php bloginfo( 'template_url' ); ?>/images/linked_in.png"> -->
+				</a>
+			</p>
 		</div>
 
 		<div class="twelve columns copyright">
