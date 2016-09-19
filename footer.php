@@ -36,7 +36,7 @@
 				</li>
 				<li>
 					<p>Email: <a href="mailto:info@centuryequities.com">info@centuryequities.com</a></br>
-					Partners: <a href="http://www.centuryequities.com/"/>Century Equities</a>
+					<!-- Partners: <a href="http://www.centuryequities.com/"/>Century Equities</a> -->
 				</li>
 			</ul>
 			</div>

@@ -104,7 +104,7 @@ $('.pin').click(function(){
   //$('.results').not('div'+_classI).slideUp(500);
 })
 
-var st_clairesville = $('.results div.st-clairesville').size();
+var st_clairesville = $('.results div.st-clairsville').size();
 var wheeling = $('.results div.wheeling').size();
 var bridgeport = $('.results div.bridgeport').size();
 var waynesburg = $('.results div.wanynesburg').size();
@@ -112,7 +112,7 @@ var steubenville = $('.results div.steubenville').size();
 var waynesburg = $('.results div.waynesburg').size();
 
 
-$('.pin.st-clairesville')
+$('.pin.st-clairsville')
   .css({'width': 10+(5*st_clairesville), 'height':10+(5*st_clairesville)})
   .attr('data-count',st_clairesville);
 
