@@ -146,11 +146,33 @@ ul#nav{
 		font-weight:bold; 
 		vertical-align: top;
     	display: inline-block;    
-    	*display: inline;   
+    	position:relative;   
     	zoom: 1;
 		a{text-decoration: none;}
 		a:hover{text-decoration: none;  } 
 		&:last-child{padding-right:0px;}
+
+		//Add For Dropdown styling
+		&:hover,
+	    &.active,
+	    &:focus{
+		    	ul{
+		    		left:0px;
+
+		    		li{
+		    			a:hover,
+		    			a:active,
+		    			a:focus{
+		    				color:#0c2649; 
+		    			}
+		    		}
+
+		    		a{
+		    			text-decoration:none;
+		    		}
+		    	}
+		    }
+		//-------------------------------
 
 		@include breakpoint(smallscreen) {
     	 	font-size: 11px;	
@@ -163,6 +185,42 @@ ul#nav{
 			display: block; padding-top:5px;       
 		}
 
+		//Add For Dropdown styling
+		ul{
+			
+		    background: rgba(153,167,185, 0.6);
+		    list-style: none;
+		    position: absolute;
+		    z-index: 9999;
+		    left: -9999px;
+		    width: 250px;
+		    padding: 5px;
+	        // border:1px solid #0c2649;
+
+		    li{
+		    	padding:3px;
+			    background-color: #fff;
+			    float: none;
+			    width: 244px; 
+
+			    &:last-child{
+			    	padding-right:3px;
+			    }
+
+			    a{
+			    	white-space: nowrap;
+			    	color:#99a7b9;
+			    	padding-left:3px;
+			    	&:hover,
+			    	&:active,
+			    	&:focus{
+			    		opacity:.7;
+			    		color:#0c2649;
+			    	}
+			    }
+		    }
+		}
+		//----------------------------------
 
 	}
 	.stretch{width: 100%; display: inline-block; font-size: 0; line-height: 0;}
@@ -703,16 +761,26 @@ a.more{float:right; font-weight:bold; font-style: italic;}
 	left:423px;
 }
 
+.pin.canonsburg{
+    left: 453px;
+    top: 221px;
+}
 
+.pin.lawrenceville{
+	left:632px;
+	top:30px;
+}
+
+//Correct pin locations for the breakpoint created at 959px
 @media only screen and (max-width: 959px) and (min-width: 768px){
       .pin.wheeling{
       top:229px;
-      left:339px;
+      left:348px;
     }
 
     .pin.st-clairsville{
       top:239px;
-      left:313px;
+      left:319px;
     }
 
     .pin.waynesburg{
@@ -731,8 +799,18 @@ a.more{float:right; font-weight:bold; font-style: italic;}
     }
 
     .pin.new-martinsville{
-	top:270px;
-	left:333px;
+		top:270px;
+		left:333px;
+	}
+
+	.pin.canonsburg{
+    	left: 369px;
+    	top: 225px;
+	}
+
+	.pin.lawrenceville{
+	left:527px;
+	top:68px;
 	}
 }
 
@@ -795,6 +873,10 @@ a.more{float:right; font-weight:bold; font-style: italic;}
   border-style: solid;
   border-width: 10px 7.5px 0 7.5px;
   border-color: #efefef transparent transparent transparent;
+}
+
+span.cs{
+	color:#b42512
 }
 
 .results{

@@ -75,12 +75,14 @@
                   $the_whole = strtolower(implode("-", $the_parts));
                   $the_id = str_replace(array('--','/'),'-', $the_whole);
 
+                  $is_cs = get_field('coming_soon', $post->ID);
+
                   $publish = get_post_status($ID);
 
                   if ($publish == 'publish') {
                   ?>
 
-                  <div><a href="#<?php echo $the_id; ?>"><?php the_title(); ?></a></div>
+                  <div><a href="#<?php if($is_cs == 'true'){echo 'coming-soon';} else{ echo $the_id;} ?>"><?php the_title(); ?> <?php if($is_cs == "true"){ echo '<span class="cs"><sup>*</sup>Coming Soon</span>'; }?></a></div>
 
                   <? } endwhile; endif; wp_reset_query(); ?>
 
@@ -128,6 +130,7 @@
                   $hotel_family_icon = get_field('hotel_family_icon', $post->ID);
                   $portfolio_images = get_field('hotel_portfolio_images', $post->ID);
                   $hotel_link = get_field('hotel_link');
+                  $is_coming_soon = get_field('coming_soon');
 
                   //Sanitize the title so that it can be used as the id for our hotels
                   $title = get_the_title();
@@ -145,6 +148,7 @@
 
 				?>
 		<?php //the_content(); ?>
+		<?php if ($is_coming_soon != 'true' ){ ?>
 		 <div class="pick <?php echo $output_city ?> " id="<?php echo $the_id; ?>">  <!-- hide -->
 		 	<h2><?php the_title(); ?></h2>
 		 	<?php 
@@ -216,12 +220,12 @@
 		 		<a class="btt" href="#map"><span><strong>&uarr;</strong></span> Back to map</a>
 	 		</div>
 		 </div>
-
+		 <?php } ?>
 
 <?php endwhile; endif;?>
 
 </div><!-- end results -->
-<div class="coming_soon">
+<div class="coming_soon" id="coming-soon">
 	<h1>Coming soon</h1>
 	<?php if (have_rows('coming_soon_list', 1251)) : 
 			while(have_rows('coming_soon_list', 1251)) : the_row();
